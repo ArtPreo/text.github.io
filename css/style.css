@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "SpecialElite";
+	src:url("../fonts/SpecialElite.woff") format("woff");
+}
+@font-face {
+	font-family: "cardo";
+	src:url("../fonts/cardo/cardo-bold.woff") format("woff");
+}
+@font-face {
+	font-family: "cardo";
+	src:url("../fonts/cardo/cardo-italic.woff") format("woff");
+}
+@font-face {
+	font-family: "cardo";
+	src:url("../fonts/cardo/cardo-regular.woff") format("woff");
+}
+body {
+	font-family: "cardo";
+	font-size: 12px;
+	text-align: justify;
+	background-size: 100% 1.5em;
+	background-image: linear-gradient(#eee .05em, transparent 1px);
+	background-image: -webkit- linear-gradient(#eee .05em, transparent 1px);
+	background-image: -moz- linear-gradient(#eee .05em, transparent 1px);
+
+}
+main {
+	min-width: 400px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-family: "SpecialElite";
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	letter-spacing: .1em;
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	padding-top: 1.2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h3:before {
+	content: "❧";
+	margin-right: 4px;
+}
+
+
+h2+p:first-letter {
+	font-family: "SpecialElite";
+    font-size: 2.7em;
+    float: left;
+    padding-top: 7px;
+}
+blockquote {
+	font-style: italic;
+	text-align: left;
+	width: 150px;
+	margin-left: 0px;
+	line-height: 1.5em;
+}
+blockquote:before {
+	content: open-quote;
+	font-size: 2em;
+	color: #eee;
+	margin-left: -14px;
+}
+.name {
+	font-variant: small-caps;
+	font-size: 0.9em;
+	text-align: right;
+}
+figure:before {
+	content: "❦";
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 4em;
+}
+.quo {
+	font-style: italic;
+	text-align: left;
+}
+.quo:before {
+	content: open-quote;
+}
+.quo:after {
+	content: close-quote;
+}
+u {
+	text-decoration: none;
+	border-bottom: 1px dashed #ccc;
+}
+footer {
+	font-variant: small-caps;
+	font-size: 0.9em;
+	text-align: center;
+	color: grey;
+	margin-top: 40px;
+}
